@@ -1,13 +1,128 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.App{
+  overflow: hidden;
+}
+
+.nav_logo{
+  max-width: 150px;
+}
+
+.hero_container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.hero_heading {
+  width: 100%;
+  background: black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: 0.6s;
+}
+
+.earth_image{
+  width: 100%;
+  background-size: cover;
+  transition: 0.6s;
+}
+
+.section_header{
+  background: black;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.h1{
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  font-family:'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin:15px auto;
+}
+
+.h1 > span{
+  color: #E62B1E;
+  font-weight: 400;
+  transition: 0.6s;
+}
+
+.h2{
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+  margin: 15px auto;
+  padding: 0 20px;
+  transition: 0.6s;
+}
+
+.h3{
+  color: rgba(255,255,255,0.8);
+  margin:15px auto;
+  padding: 0 20%;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.6s;
+}
+button{
+  background: #E62B1E!important;
+  color: white!important;
+}
+
+.register{
+  margin:0 auto;
+}
+
+.button{
+  background: #E62B1E!important;
+  color: white!important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 12px!important;
+  font-weight: 300;
+  padding: 10px 20px !important;
+}
+
+.socialButton{
+  max-width: 200px;}
+
+.socialButton > img{
+  width: 100%;
+
+}
+
+@media screen and (min-width:900px ){
+  .earth_image{
+    position: relative;
+    margin-top: -250px;
+    transition: 0.6s;
+  }
+}
+
+@media screen and (max-width:500px ){
+  .earth_image{
+    position: relative;
+    transition: 0.6s;
+  }
+
+  .h2{
+    font-size: 50px;
+  }
+
+
 }
