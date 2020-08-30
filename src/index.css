@@ -5,6 +5,7 @@
 body{
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  background: black;
 }
 
 .App{
@@ -109,7 +110,7 @@ button{
 @media screen and (min-width:900px ){
   .earth_image{
     position: relative;
-    margin-top: -250px;
+    margin-top: -300px;
     transition: 0.6s;
   }
 }
@@ -117,12 +118,17 @@ button{
 @media screen and (max-width:500px ){
   .earth_image{
     position: relative;
+    margin-top: 100px;
     transition: 0.6s;
   }
 
   .h2{
-    font-size: 50px;
+    font-size: 40px;
+    padding: 0 5px;
   }
 
+  .h3{
+    padding: 0 10%;
+  }
 
 }
